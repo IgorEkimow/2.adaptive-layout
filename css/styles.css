@@ -1,0 +1,724 @@
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.woff') format("woff");
+    src: url('../fonts/OpenSans-Regular.woff2') format("woff2");
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans-Bold.woff') format("woff");
+    src: url('../fonts/OpenSans-Bold.woff2') format("woff2");
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'OpenSans-Regular', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    background-image: url("../images/football_1920.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #0a0e34;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.header h1 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-size: 90px;
+    color: #fff;
+    line-height: 93px;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 270px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.header span {
+    align-self: flex-end;;
+}
+
+.container {
+    max-width: 1920px;
+    margin: auto;
+    padding: 0 180px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: block;
+    width: 190px;
+    height: 60px;
+    padding-top: 45px;
+    margin: 0 auto;
+    fill: #fff;
+}
+
+.social-block {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 108px 0 212px;
+}
+
+.social-icon {
+    display: flex;
+    min-width: 310px;
+    box-sizing: border-box;
+}
+
+.social-icon:first-child {
+    margin-right: 50px;
+}
+
+.social-icon:first-child svg {
+    margin-left: 0;
+}
+
+.social-icon svg {
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.social-icon span {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: 700;
+}
+
+.social-button {
+    align-self: center;
+    max-width: 150px;
+}
+
+.btn {
+    color: #fff;
+    border-radius: 50px;
+    max-width: 310px;
+    padding: 14px 30px;
+    background-color: #5e42b0;
+    text-decoration: none;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.block-line {
+    display: flex;
+}
+
+.block-wrap__left {
+    width: 720px;
+}
+
+.block-img__left {
+    width: 566px;
+    height: 908px;
+    position: absolute;
+    left: -550px;
+    top: 28px;
+    z-index: 1;
+}
+
+.block-img__right {
+    width: 991px;
+    height: 815px;
+    position: absolute;
+    right: -800px;
+    top: 21px;
+    z-index: 1;
+}
+
+.athlets-block h2, .athlets-block h3, .athlets-block p {
+    overflow: hidden;
+}
+
+.block-line h2 {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-size: 80px;
+    color: #e7e7e7;
+    margin-top: 90px;
+    margin-bottom: 74px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.block-line h3 {
+    display: flex;
+    color: #c1c1c1;
+    font-size: 36px;
+    font-family: 'OpenSans-Bold', sans-serif;
+    text-transform: uppercase;
+    margin-top: 53px;
+}
+
+.block-line p {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 21px;
+    margin-top: 13px;
+    max-width: 720px;
+    word-spacing: 4px;
+}
+
+.purple p, .deeppurple p {
+    color: #fff;
+}
+
+.left-row, .right-row {
+    width: 50%;
+    position: relative;
+}
+
+.athlets-block .right-row {
+    padding-left: 95px;
+    padding-bottom: 52px;
+    padding-right: 30px;
+}
+
+.players-block .left-row {
+    padding-left: 50px;
+    padding-bottom: 56px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.players-block .block {
+    overflow: hidden;
+}
+
+.num {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-size: 18px;
+    color: #000;
+    padding-right: 10px;
+    padding-top: 7px;
+}
+
+.deeppurple .num {
+    color: #9173e6;
+}
+
+.num:after {
+    content: '';
+    display: block;
+    border-bottom: 5px solid #5e42b0;
+    border-radius: 5px;
+}
+
+.purple .num:after {
+    border-bottom: 5px solid #efefef;
+}
+
+.deeppurple .num:after {
+    border-bottom: 5px solid #efefef;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.grey {
+    background-color: #f6f4fa;
+}
+
+.purple {
+    background-color: #5e42b0;
+}
+
+.ggrey {
+    background-color: #f5f6f7;
+}
+
+.deeppurple {
+    background-color: #0a0e34;
+}
+
+.skills-block {
+    counter-reset: heading;
+}
+
+.skill-item {
+    display: flex;
+    height: 730px;
+}
+
+.skill-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.skill-img, .skill-desc {
+    width: 50%;
+    position: relative;
+}
+
+.skill-img::after {
+    content: "0" counter(heading);
+    position: absolute;
+    top: 28%;
+    right: -85px;
+    width: 170px;
+    height: 155px;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'OpenSans-Bold', sans-serif;
+    text-align: center;
+    line-height: 140px;
+    background-color: #5e42b0;
+    counter-increment: heading;
+}
+
+.skill-img::before {
+    content: '';
+    position: absolute;
+    border: 5px solid #fff;
+    opacity: 0.3;
+    border-radius: 5px;
+    top: 40%;
+    right: -18px;
+    display: block;
+    width: 25px;
+    z-index: 1;
+}
+
+.skill-item:nth-child(even) > .skill-img::after {
+    content: "0" counter(heading);
+    position: absolute;
+    left: -85px;
+    counter-increment: heading;
+}
+
+.skill-item:nth-child(even) > .skill-img::before {
+    content: '';
+    position: absolute;
+    left: -18px;
+}
+
+.skill-item_img {
+    display: block;
+    width: 100%;
+}
+
+.skill-desc {
+    align-self: center;
+    box-sizing: border-box;
+    max-width: 780px;
+    margin: auto;
+}
+
+.skill-item:nth-child(odd) .skill-desc {
+    padding: 0 30px 0 100px;
+}
+
+.skill-item:nth-child(even) .skill-desc {
+    padding: 0 100px 0 30px;
+}
+
+.skill-desc h3 {
+    color: #e7e7e7;
+    font-size: 80px;
+    font-family: 'OpenSans-Bold', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    word-break: break-word;
+}
+
+.skill-desc p {
+    font-size: 24px;
+    margin: 0;
+    padding-top: 110px;
+}
+
+.footer {
+    background-image: url("../images/game_1920.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #0a0e34;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 230px;
+}
+
+.footer-icon {
+    width: 170px;
+    min-width: 170px;
+    height: 170px;
+    display: block;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: #7050cc;
+    border-radius: 40px;
+    fill: #fff;
+}
+
+.footer-desc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+
+.footer h2 {
+    color: #fff;
+    font-size: 80px;
+    font-family: 'OpenSans-Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer p {
+    color: #a496ca;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.footer .logo {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+    .players-block .left-row {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .skill-desc h3 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .header h1 {
+        font-size: 64px;
+        line-height: 64px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header h1 span {
+        width: 520px;
+    }
+    .social-block {
+        padding: 260px 0 65px;
+    }
+    .social-icon:first-child {
+        margin-right: 5px;
+    }
+    .athlets-block .block-img__left {
+        width: 465px;
+        height: 748px;
+        left: -470px;
+        top: 78px;
+    }
+    .players-block .block-img__right {
+        width: 690px;
+        height: 561px;
+        right: -698px;
+        top: 60px;
+    }
+    .athlets-block .left-row {
+        width: 40%;
+    }
+    .athlets-block .right-row {
+        width: 60%;
+        padding-left: 40px;
+        padding-right: 15px;
+        padding-bottom: 40px;
+    }
+    .players-block .left-row {
+        width: 55%;
+        padding-left: 15px;
+        padding-bottom: 40px;
+        justify-content: flex-start;
+    }
+    .players-block .right-row {
+        width: 45%;
+    }
+    .block-line h2 {
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+    .block-line h3 {
+        font-size: 32px;
+        margin-top: 40px;
+    }
+    .block-line p {
+        font-size: 16px;
+    }
+    .skill-item {
+        height: auto;
+        flex-direction: column;
+    }
+    .skill-item:nth-child(even) {
+        flex-direction: column;
+    }
+    .skill-img, .skill-desc {
+        width: 100%;
+        max-width: 100%;
+    }
+    .skill-item:nth-child(odd) .skill-desc, .skill-item:nth-child(even) .skill-desc{
+        padding: 80px 30px;
+    }
+    .skill-img {
+        height: 580px;
+    }
+    .skill-desc p {
+        padding-top: 0;
+    }
+    .skill-img::after, .skill-item:nth-child(even) > .skill-img::after {
+        width: 116px;
+        height: 116px;
+        top: unset;
+        left: 35px;
+        bottom: -58px;
+        line-height: 116px;
+    }
+    .skill-img::before, .skill-item:nth-child(even) > .skill-img::before {
+        top: unset;
+        border: 3px solid #fff;
+        bottom: -25px;
+        right: unset;
+        left: 80px;
+        width: 21px;
+    }
+    .footer-icon {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        min-width: 130px;
+        border-radius: 30px;
+        padding: 20px;
+        top: 115px;
+    }
+    .footer .logo {
+        padding-bottom: 20px;
+    }
+    .footer-block {
+        padding-top: 330px;
+    }
+    .footer-desc {
+        margin-left: 0;
+    }
+    .footer .container {
+        padding: 0 20px;
+    }
+    .footer h2 {
+        font-size: 72px;
+    }
+    .footer p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .players-block .block-img__right {
+        right: -598px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .logo {
+        width: 140px;
+        height: 40px;
+    }
+    .header .logo {
+        padding-top: 25px;
+    }
+    .header h1 {
+        font-size: 28px;
+        line-height: 28px;
+        padding: 160px 0 0;
+    }
+    .header h1 span {
+        width: 261px;
+        margin-top: 20px;
+    }
+    .header .social-block {
+        padding: 90px 0;
+    }
+    .social-block {
+        font-size: 8px;
+        flex-direction: column;
+        padding: 70px 0 65px;
+    }
+    .social-block .btn:first-child  {
+        margin-bottom: 15px;
+    }
+    .social-icon svg {
+        width: 25px;
+        height: 25px;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .social-button {
+        width: 78px;
+    }
+    .btn {
+        justify-content: center;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 5px 30px;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .athlets-block .block-img__left {
+        width: 190px;
+        height: 308px;
+        margin: auto;
+    }
+    .players-block .block-img__right {
+        width: 290px;
+        height: 239px;
+        margin: auto;
+    }
+    .players-block .left-row {
+        flex-direction: column;
+    }
+    .athlets-block .left-row, .players-block .right-row {
+        width: 0;
+    }
+    .athlets-block .right-row, .players-block .left-row {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .athlets-block .block-img__left, .players-block .block-img__right {
+        position: relative;
+        top: unset;
+        left: unset;
+        right: unset;
+        bottom: unset;
+        padding-top: 90px;
+    }
+    .num {
+        padding-top: 3px;
+        font-size: 14px;
+    }
+    .block-wrap__left {
+        width: 100%;
+    }
+    .block-line h2 {
+        font-size: 50px;
+        padding: 0 20px;
+        position: absolute;
+        top: 0;
+        margin: 15px 0 0;
+    }
+    .block-line h3 {
+        font-size: 23px;
+        padding: 0 20px;
+    }
+    .block-line p {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+    .skill-img {
+        height: 350px;
+    }
+    .skill-img::after, .skill-item:nth-child(even) > .skill-img::after {
+        width: 70px;
+        height: 70px;
+        left: 20px;
+        bottom: -15px;
+        line-height: 70px;
+        font-size: 14px;
+    }
+    .skill-img::before, .skill-item:nth-child(even) > .skill-img::before {
+        border: 2px solid #fff;
+        bottom: 5px;
+        left: 46px;
+        width: 14px;
+    }
+    .skill-item:nth-child(odd) .skill-desc, .skill-item:nth-child(even) .skill-desc {
+        padding: 35px 20px 60px;
+    }
+    .skill-desc h3 {
+        font-size: 28px;
+    }
+    .skill-desc p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .footer .logo {
+        padding-bottom: 10px;
+    }
+    .footer-block {
+        padding-top: 250px;
+    }
+    .footer-icon {
+        width: 78px;
+        height: 78px;
+        min-width: 78px;
+        border-radius: 20px;
+        padding: 12px;
+    }
+    .footer h2 {
+        font-size: 32px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+}
